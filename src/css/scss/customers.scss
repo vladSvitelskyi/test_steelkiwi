@@ -1,0 +1,109 @@
+// *********************
+// ***** CUSTOMERS *****
+// *********************
+.customers-section {
+    background-color: $color-orange-border;
+    &__title {
+        padding-top: 2%;
+        font: 35px $pf-regular;
+        text-transform: uppercase;
+    }
+    &__description {
+        padding-top: 0.5%;
+        font: 22px $pf-lightitalic;
+    }
+}
+
+.customers-section-header-container {
+    background-color: $color-orange-border;
+}
+
+.customers-section-header {
+    text-align: center;
+}
+
+.tabs-container {
+    background-color: $color-orange-border;
+}
+
+.tabs {
+    padding-top: 2.5%;
+    padding-bottom: 2%;
+}
+
+.tabs-block {
+    display: inline-block;
+    width: 24.66%;
+    vertical-align: top;
+    cursor: pointer;
+    &__item {
+        font: 19.8px $pf-medium;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+
+.tabs-block--active {
+    position: relative;
+    .tabs-block__item {
+        font: 19.8px $pf-light;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        top: 177%;
+        left: 39%;
+        border-width: 25px 25px 0;
+        border-style: solid;
+        border-color: $color-orange-border transparent;
+        display: block;
+        width: 0;
+    }
+}
+
+.tabs-content-container {
+    background-color: $color-white;
+}
+
+.tabs-content {
+    padding-top: 4%;
+    padding-bottom: 17%;
+}
+
+.tabs-content-block {
+    &__img {
+        float: left;
+        margin-right: 2%;
+        margin-bottom: 5%;
+        width: 310px;
+        height: 80px;
+        background: url(../../images/sprite_brands.png) no-repeat;
+        &:nth-child(1) {
+            background-position: 0 13px;
+        }
+        &:nth-child(2) {
+            background-position: -400px 5px;
+        }
+        &:nth-child(3) {
+            background-position: -850px 0;
+        }
+        &:nth-child(4) {
+            background-position: 0 -98px;
+        }
+        &:nth-child(5) {
+            background-position: -405px -103px;
+        }
+        &:nth-child(6) {
+            background-position: -900px -138px;
+        }
+    }
+}
+
+#tabs,
+#tabs-content {
+    display: block;
+}
+
+#accordion {
+    display: none;
+}

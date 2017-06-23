@@ -1,0 +1,24 @@
+{
+  "name": "test_svitelskyi",
+  "authors": [
+    "Vladyslav Svitelskyi <vladyslav.svitelskyi@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "css-reset-and-normalize-sass": "^0.1.2",
+    "jquery": "^3.2.1",
+    "fancybox": "^3.1.20",
+    "bxslider-4": "bxSlider#^4.2.12"
+  }
+}

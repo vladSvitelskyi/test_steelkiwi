@@ -1,0 +1,64 @@
+// **********************
+// ***** HEADER NAV *****
+// **********************
+.header-nav {
+    min-height: 49px;
+    border-bottom: 1px solid rgba(194, 106, 11, 0.4);
+    background-color: $color_orange;
+}
+
+.header-mobile-label {
+    display: none;
+    float: right;
+    width: 29px;
+    height: 21px;
+    margin-top: 14px;
+    background-image: url(../../images/mobile_menu_icon.png);
+    cursor: pointer;
+}
+
+.header-mobile-input {
+    display: none;
+}
+
+.header-mobile-input:checked ~ .header-nav-list {
+    display: block;
+}
+
+.header-nav-list {
+    &__item {
+        display: block;
+        float: left;
+        margin-right: 2.2%;
+        height: 49px;
+        line-height: 52px;
+        &:hover {
+            color: $color-black;
+        }
+        &:nth-child(2n) {
+            color: $color-white;
+            &:hover {
+                color: $color-white;
+            }
+            &::before {
+                content: '•';
+            }
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+        &-link {
+            color: $color-white;
+            font: 20px $pf-regular;
+            text-transform: uppercase;
+            text-decoration: none;
+            &:hover {
+                color: $color-black;
+            }
+        }
+    }
+}
+
+.header-nav__item-link--active {
+    color: $color-black;
+}

@@ -1,0 +1,28 @@
+// ****************
+// ***** BASE *****
+// ****************
+.container {
+    width: 62%;
+    margin: 0 auto;
+}
+
+.btn {
+    height: 40px;
+    width: 197px;
+    color: $color-white;
+    background-color: $color-orange;
+    border: none;
+    outline: none;
+    font: 25px $pf-regular;
+    text-transform: uppercase;
+    &:hover {
+        background-color: $color-orange-hover;
+    }
+}
+
+// help
+.clearfix {
+    content: "";
+    display: block;
+    clear: both;
+}

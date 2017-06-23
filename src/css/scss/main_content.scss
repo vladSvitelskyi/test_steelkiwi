@@ -1,0 +1,143 @@
+// ************************
+// ***** MAIN CONTENT *****
+// ************************
+.main-content {
+    min-height: 1130px;
+    background-color: $color-white;
+    border-top: 4px solid $color-orange-border;
+}
+
+// --- works section ---
+.works-section {
+    float: left;
+    max-height: 1130px;
+    width: 65%;
+    margin-right: 3%;
+}
+
+#work-card-title,
+#work-card-title-copy {
+    display: block;
+}
+
+#work-card-title-mobile {
+    display: none;
+}
+
+.work-card {
+    float: left;
+    margin-bottom: 4%;
+    &:first-child {
+        margin-top: 10%;
+    }
+    &:nth-child(3) {
+        margin-bottom: 8%;
+    }
+    &:last-child {
+        margin-bottom: 10%;
+    }
+    &__img {
+        float: left;
+        margin-right: 3%;
+    }
+    &__title {
+        padding-top: 2%;
+        font: 30px $pf-regular;
+        text-transform: uppercase;
+        &--copy {
+            padding-top: 0;
+        }
+    }
+    &__description {
+        padding-top: 3%;
+        font: 17px $pf-regular;
+        text-align: justify;
+    }
+    &__btn {
+        margin-top: 3%;
+    }
+}
+
+// --- sidebar aside ---
+#sidebar-aside {
+    display: block;
+}
+
+#sidebar-aside-mobile {
+    display: none;
+}
+
+.sidebar-aside {
+    float: left;
+    width: 32%;
+}
+
+.certificate-article {
+    text-align: center;
+    margin-top: 17%;
+    &__title {
+        font: 35px $pf-regular;
+        text-transform: uppercase;
+    }
+    &__img {
+        margin-top: 15%;
+        border: none;
+        outline: 0;
+        &:focus {
+            outline: 0;
+        }
+    }
+}
+
+.sub-slider-article {
+    text-align: center;
+    margin-top: 23%;
+    &__title {
+        font: 35px $pf-regular;
+        text-transform: uppercase;
+    }
+}
+
+.sub-slider {
+    margin-top: 22%;
+}
+
+// help sub slider 
+.bx-wrapper {
+    box-shadow: none;
+    img {
+        margin: 0 auto;
+    }
+    .bx-pager {
+        display: none;
+    }
+    .bx-prev {
+        background: none;
+    }
+    .bx-next:focus,
+    .bx-next:hover {
+        background-position: 0 0;
+    }
+    .bx-next {
+        background: none;
+    }
+    .bx-controls-direction {
+        a {
+            width: 19px;
+            height: 17px;
+            margin: 0;
+        }
+        .bx-prev {
+            position: absolute;
+            top: -13%;
+            left: 46%;
+            background-image: url(../images/works/sub_slider/sub_slider_prev.png);
+        }
+        .bx-next {
+            position: absolute;
+            top: 107%;
+            left: 46%;
+            background-image: url(../images/works/sub_slider/sub_slider_next.png);
+        }
+    }
+}
